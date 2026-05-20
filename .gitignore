@@ -3,6 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+PJATK-APBD-Cw8-s24009/.idea/
+PJATK-APBD-Cw8-s24009/PJATK-APBD-Cw8-s24009/bin/
+PJATK-APBD-Cw8-s24009/PJATK-APBD-Cw8-s24009/obj/
+
 # User-specific files
 *.rsuser
 *.suo
