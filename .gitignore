@@ -3,7 +3,7 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-PJATK-APBD-Cw8-s24009/EFCoreDatabaseFirst/.idea/
+EFCoreDatabaseFirst/.idea/
 PJATK-APBD-Cw8-s24009/EFCoreDatabaseFirst/EFCoreDatabaseFirst/bin/
 PJATK-APBD-Cw8-s24009/EFCoreDatabaseFirst/EFCoreDatabaseFirst/obj/
 
