@@ -29,4 +29,24 @@ public class PatientsController(IPatientService service) : ControllerBase
 
         return Ok(result);
     }
+
+    [HttpPost("{pesel}/bedassignments")] 
+    public async Task<IActionResult> CreateBedAssignment(string pesel, [FromBody] BedAssignmentRequest request,
+        CancellationToken cancellationToken)
+    {
+        try
+        {
+            await service.AddBedAssignmentAsync(pesel, request, cancellationToken);
+            return Created(string.Empty, new { Message = "Bed assignment created successfully." });
+
+        }
+        catch (KeyNotFoundException e)
+        {
+            return NotFound(new { Message = e.Message });
+        }
+        catch(NotFoundException e)
+        {
+            return NotFound(new { Message = e.Message });
+        }
+    }
 }
